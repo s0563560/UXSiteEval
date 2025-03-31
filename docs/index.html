@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 54%;
+        }
+        .left-buttons, .right-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .blank-space {
+            flex: 2.3;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+            flex: 5.4;
+        }
+        .left-sections {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+        }
+        .left-section, .right-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .right-section {
+            flex: 1;
+        }
+        .title {
+            font-size: 36px;
+            margin: 0;
+            color: #333;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 16px;
+            margin: 0;
+            color: #666;
+            text-align: center;
+        }
+        .news-header {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .patch {
+            margin-bottom: 20px;
+        }
+        .patch-header {
+            font-size: 18px;
+            margin: 0;
+            color: #333;
+        }
+        .patch-description {
+            font-size: 14px;
+            margin: 5px 0 0 0;
+            color: #666;
+        }
+        .units-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .units-header h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .units-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .unit-container {
+            margin-top: 20px;
+        }
+        .unit {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .unit-header {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .unit-description {
+            font-size: 14px;
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="blank-space"></div>
+        <div class="header-content">
+            <div class="left-buttons">
+               
+            </div>
+            <div class="right-buttons">
+                <button class="btn">Profile</button>
+            </div>
+        </div>
+        <div class="blank-space"></div>
+    </header>
+    <div class="container">
+        <div class="blank-space"></div>
+        <div class="content">
+            <div class="left-sections">
+                <div class="left-section">
+                    <h1 class="title">GenericGame</h1>
+                    <p class="subtitle">A Team-Based Battler</p>
+                </div>
+                <div class="left-section">
+                    <div class="units-header">
+                        <h2>Units</h2>
+                        <div class="units-buttons">
+                            <button class="btn" onclick="location.href='fighter.html'">Fighter</button>
+                            <button class="btn" onclick="location.href='tank.html'">Tank</button>
+                            <button class="btn" onclick="location.href='mage.html'">Mage</button>
+                        </div>
+                    </div>
+                    <div class="unit-container">
+                        <div class="unit">
+                            <h3 class="unit-header"><a href="Bob.html">Bob</a></h3>
+                            <p class="unit-description">A versatile warrior adept at both offense and defense. Bob excels in critical strikes and has a high dodge rate.</p>
+                        </div>
+                        <div class="unit">
+                            <h3 class="unit-header">Fighter 2</h3>
+                            <p class="unit-description">Description of Fighter 2...</p>
+                        </div>
+                        <div class="unit">
+                            <h3 class="unit-header">Tank 1</h3>
+                            <p class="unit-description">Description of Tank 1...</p>
+                        </div>
+                        <div class="unit">
+                            <h3 class="unit-header">Tank 2</h3>
+                            <p class="unit-description">Description of Tank 2...</p>
+                        </div>
+                        <div class="unit">
+                            <h3 class="unit-header">Mage 1</h3>
+                            <p class="unit-description">Description of Mage 1...</p>
+                        </div>
+                        <div class="unit">
+                            <h3 class="unit-header">Mage 2</h3>
+                            <p class="unit-description">Description of Mage 2...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <h2 class="news-header">News</h2>
+                <div class="patch">
+                    <h3 class="patch-header">Patch 0.3</h3>
+                    <p class="patch-description">Details about the latest patch go here...</p>
+                </div>
+                <div class="patch">
+                    <h3 class="patch-header">Patch 0.2</h3>
+                    <p class="patch-description">Details about the previous patch go here...</p>
+                </div>
+                <div class="patch">
+                    <h3 class="patch-header">Patch 0.1</h3>
+                    <p class="patch-description">Details about the initial patch go here...</p>
+                </div>
+            </div>
+        </div>
+        <div class="blank-space"></div>
+    </div>
+</body>
+</html>
